@@ -6,17 +6,6 @@
 
 \*Correspondence: [altemose@stanford.edu](mailto:altemose@stanford.edu), [khmiga@soe.ucsc.edu](mailto:khmiga@soe.ucsc.edu)
 
----
-
-## Summary
-
-Centromeres ensure proper chromosome segregation during cell division, yet the organization and regulation of centromeric chromatin within satellite DNA arrays remain incompletely understood. This study leverages the complete diploid human genome benchmark (T2T-HG002) to provide a detailed characterization of centromeric sequence and chromatin architecture resolved to individual haplotypes.
-
-Using adaptive-sampling-enriched, ultra-long-read DiMeLo-seq, we achieve single-molecule chromatin profiling across all centromeres. We show that CENP-A — the histone variant specifying centromere identity — forms multiple discrete subdomains within hypomethylated centromere dip regions (CDRs) flanked by H3K9me3-enriched heterochromatin. CDRs localize to sequence-homogeneous domains and maintain relatively balanced CENP-A dosage across all chromosomes and between haplotypes.
-
-We further demonstrate that bidirectional changes to centromeric DNA methylation are accompanied by restructuring of centromeric chromatin architecture: in passaged cells with hypomethylation, subdomain boundaries are eroded and adjacent CENP-A domains merge and expand; in pluripotent stem cells with hypermethylation, discrete hypomethylated domains consolidate into broader contiguous tracts. These findings implicate DNA methylation as a principal regulator of human centromere organization, with implications for centromere plasticity, epigenetic inheritance, and chromosomal instability in development and disease.
-
----
 
 ## Repository Structure
 
