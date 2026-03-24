@@ -106,16 +106,7 @@ python intermediate_scripts/dimelo_density.py \
 | `--threads` | Number of parallel worker processes (default: 1) |
 | `--window-size` | Window size in bp for tiling (default: 1000) |
 
----
 
-## Data Availability
 
-This study uses the T2T-HG002 complete diploid human genome benchmark. Data availability details will be updated upon publication.
-
----
-
-## Citation
-
-If you use code or data from this repository, please cite:
 
 > Xu Y, Loucks H, Menendez J, et al. *Haplotype-resolved centromeric chromatin organization from a complete diploid human genome.* Cell Genomics (submitted).
