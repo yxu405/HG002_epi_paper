@@ -6,6 +6,7 @@
 
 \*Correspondence: [altemose@stanford.edu](mailto:altemose@stanford.edu), [khmiga@soe.ucsc.edu](mailto:khmiga@soe.ucsc.edu)
 
+---
 
 ## Repository Structure
 
@@ -64,6 +65,22 @@ HG002_epi_paper/
 
 ---
 
+## External Tools & Workflows
+
+The following external tools and workflows were used in this study. Please refer to their respective repositories for installation and usage instructions:
+
+| Tool | Description | Repository |
+|------|-------------|------------|
+| DiMeLo-seq raw data processing | Batch SLURM script for BAM conversion, alignment, and post-processing | [HG002_dimelo_raw_data_processing](https://github.com/yxu405/HG002_dimelo_raw_data_processing) |
+| alphaAnnotation | CenSat annotation workflow | [alphaAnnotation](https://github.com/kmiga/alphaAnnotation) |
+| HORhap | HOR haplotype annotation tool | [horhap_tool](https://github.com/fedorrik/horhap_tool) |
+| superHOR annotation | SuperHOR annotation notebook for HG002 | [superHOR_HG002](https://github.com/fedorrik/superHOR_HG002) |
+| HumAS-HMMER | Monomeric annotations of alpha satellite HORs | [HumAS-HMMER](https://github.com/enigene/HumAS-HMMER) |
+| HumAS-HMMER for AnVIL | HumAS-HMMER adapted for the AnVIL platform | [HumAS-HMMER_for_AnVIL](https://github.com/fedorrik/HumAS-HMMER_for_AnVIL) |
+| chm13_hsat | Classical satellite kmer database | [chm13_hsat](https://github.com/altemose/chm13_hsat) |
+
+---
+
 ## Dependencies
 
 - Python 3.8+
@@ -71,11 +88,12 @@ HG002_epi_paper/
 - `numpy`
 - `pandas`
 - `biopython`
+- `matplotlib`
 - `jupyter`
 
 Install dependencies with:
 ```bash
-pip install pysam numpy pandas biopython jupyter
+pip install pysam numpy pandas biopython matplotlib jupyter
 ```
 
 ---
@@ -106,7 +124,6 @@ python intermediate_scripts/dimelo_density.py \
 | `--threads` | Number of parallel worker processes (default: 1) |
 | `--window-size` | Window size in bp for tiling (default: 1000) |
 
-
-
+---
 
 > Xu Y, Loucks H, Menendez J, et al. *Haplotype-resolved centromeric chromatin organization from a complete diploid human genome.* Cell Genomics (submitted).
