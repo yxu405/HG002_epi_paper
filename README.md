@@ -65,7 +65,7 @@ HG002_epi_paper/
 
 ---
 
-## External Tools & Workflows
+##Tools & Workflows
 
 The following external tools and workflows were used in this study. Please refer to their respective repositories for installation and usage instructions:
 
