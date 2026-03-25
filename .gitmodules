@@ -1,0 +1,21 @@
+[submodule "Supplemental/alphaAnnotation"]
+	path = Supplemental/alphaAnnotation
+	url = https://github.com/kmiga/alphaAnnotation
+[submodule "Supplemental/horhap_tool"]
+	path = Supplemental/horhap_tool
+	url = https://github.com/fedorrik/horhap_tool
+[submodule "Supplemental/superHOR_HG002"]
+	path = Supplemental/superHOR_HG002
+	url = https://github.com/fedorrik/superHOR_HG002
+[submodule "Supplemental/HumAS-HMMER"]
+	path = Supplemental/HumAS-HMMER
+	url = https://github.com/enigene/HumAS-HMMER
+[submodule "Supplemental/HumAS-HMMER_for_AnVIL"]
+	path = Supplemental/HumAS-HMMER_for_AnVIL
+	url = https://github.com/fedorrik/HumAS-HMMER_for_AnVIL
+[submodule "Supplemental/chm13_hsat"]
+	path = Supplemental/chm13_hsat
+	url = https://github.com/altemose/chm13_hsat
+[submodule "Supplemental/HG002_dimelo_raw_data_processing"]
+	path = Supplemental/HG002_dimelo_raw_data_processing
+	url = https://github.com/yxu405/HG002_dimelo_raw_data_processing
