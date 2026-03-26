@@ -1,12 +1,3 @@
-# Haplotype-resolved centromeric chromatin organization from a complete diploid human genome
-
-**Yuan Xu, Hailey Loucks, Julian Menendez, Fedor Ryabov, Julian K. Lucas, Monika Cechova, Luke Morina, Emily Xu, Danilo Dubocanin, Cy Chittenden, Mobin Asri, Ivo Violich, Christian Ortiz, Joshua M.V. Gardner, Todd Hillaker, Sara O'Rourke, Brandy McNulty, Tamara A Potapova, Matthew W. Mitchell, Jacob P. Schwartz, Aaron F. Straight, Jennifer L. Gerton, Winston Timp, Ivan A. Alexandrov, Nicolas Altemose\*, Karen H. Miga\***
-
-*Submitted to Cell Genomics*
-
-\*Correspondence: [altemose@stanford.edu](mailto:altemose@stanford.edu), [khmiga@soe.ucsc.edu](mailto:khmiga@soe.ucsc.edu)
-
----
 
 ## Repository Structure
 
