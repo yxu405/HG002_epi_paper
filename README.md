@@ -1,4 +1,3 @@
-
 ## Repository Structure
 
 ```
@@ -19,8 +18,18 @@ HG002_epi_paper/
 │   ├── flanking_foldchange_box_fig3C.ipynb
 │   └── Density_dot_lineplot_fig3D_E.ipynb
 │
-└── intermediate_scripts/            # Data processing pipeline scripts
-    └── dimelo_density.py
+├── intermediate_scripts/            # Data processing pipeline scripts
+│   └── dimelo_density.py
+│
+└── supplemental/                    # Supplemental scripts and submodules
+    ├── cdr_caller_v2.py
+    ├── alphaAnnotation/             # Submodule: CenSat annotation workflow
+    ├── horhap_tool/                 # Submodule: HOR haplotype annotation tool (includes merge_alignments.py)
+    ├── superHOR_HG002/              # Submodule: SuperHOR annotation notebook
+    ├── HumAS-HMMER/                 # Submodule: Monomeric alpha satellite annotations
+    ├── HumAS-HMMER_for_AnVIL/       # Submodule: HumAS-HMMER for AnVIL platform
+    ├── chm13_hsat/                  # Submodule: Classical satellite kmer database
+    └── HG002_dimelo_raw_data_processing/ # Submodule: SLURM pipeline for BAM processing
 ```
 
 ---
@@ -54,9 +63,41 @@ HG002_epi_paper/
 |--------|-------------|
 | `dimelo_density.py` | Computes region-level modified base density from DiMeLo-seq BAM files. Tiles genomic regions into fixed-size windows and calculates 6mA or CpG 5mC methylation density per window. Outputs a TSV of chrom, coordinates, density, and coverage. Supports parallel processing. |
 
+### Supplemental Scripts
+| Script | Description |
+|--------|-------------|
+| `cdr_caller_v2.py` | CDR caller script for identifying centromere dip regions |
+| `merge_alignments.py` | Merges alignment files; located within the `horhap_tool` submodule |
+
 ---
 
-##Tools & Workflows
+## Submodules
+
+This repository includes the following git submodules under `supplemental/`. To clone the repo with all submodules run:
+
+```bash
+git clone --recurse-submodules git@github.com:yxu405/HG002_epi_paper.git
+```
+
+Or if already cloned:
+
+```bash
+git submodule update --init --recursive
+```
+
+| Submodule | Description | Repository |
+|-----------|-------------|------------|
+| `HG002_dimelo_raw_data_processing` | Batch SLURM script for BAM conversion, alignment, and post-processing | [link](https://github.com/yxu405/HG002_dimelo_raw_data_processing) |
+| `alphaAnnotation` | CenSat annotation workflow | [link](https://github.com/kmiga/alphaAnnotation) |
+| `horhap_tool` | HOR haplotype annotation tool (includes `merge_alignments.py`) | [link](https://github.com/fedorrik/horhap_tool) |
+| `superHOR_HG002` | SuperHOR annotation notebook for HG002 | [link](https://github.com/fedorrik/superHOR_HG002) |
+| `HumAS-HMMER` | Monomeric annotations of alpha satellite HORs | [link](https://github.com/enigene/HumAS-HMMER) |
+| `HumAS-HMMER_for_AnVIL` | HumAS-HMMER adapted for the AnVIL platform | [link](https://github.com/fedorrik/HumAS-HMMER_for_AnVIL) |
+| `chm13_hsat` | Classical satellite kmer database | [link](https://github.com/altemose/chm13_hsat) |
+
+---
+
+## Tools & Workflows
 
 The following external tools and workflows were used in this study. Please refer to their respective repositories for installation and usage instructions:
 
